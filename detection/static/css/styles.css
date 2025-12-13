@@ -1,0 +1,190 @@
+/* ==================== General Reset ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==================== Body Styling ==================== */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #004d99, #00b3b3);  /* Unchanged Background */
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==================== Header and Navigation ==================== */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo Styling */
+.logo-container {
+    flex-shrink: 0;
+    width: 150px;
+}
+
+.logo {
+    height: 60px;
+}
+
+/* Project Title Styling */
+.title-container {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.title-container h1 {
+    font-size: 1.8em;
+    color: #f7e000;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Navigation Bar */
+.horizontal-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.horizontal-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 12px 18px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.horizontal-nav a:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* ==================== Main Content Styling ==================== */
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Content Box */
+.content-box {
+    padding: 30px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+    text-align: center;
+    width: 90%;
+}
+
+/* ==================== Prediction Text Box ==================== */
+.prediction-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Text Box Styling */
+#text-input {
+    width: 85%;
+    height: 140px;
+    padding: 12px;
+    font-size: 1.2em;
+    border: 3px solid white;
+    border-radius: 10px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    resize: none;
+    transition: 0.3s ease-in-out;
+}
+
+#text-input:focus {
+    border-color: #f7e000;
+    box-shadow: 0px 0px 10px rgba(247, 224, 0, 0.7);
+}
+
+/* Button Styling */
+button {
+    margin-top: 15px;
+    padding: 14px 22px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #45a049;
+    box-shadow: 0px 0px 10px rgba(76, 175, 80, 0.7);
+}
+
+/* ==================== Result Box Styling ==================== */
+.result-box {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1.3em;
+}
+
+/* ==================== Footer Styling ==================== */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    margin-top: auto;
+    font-size: 1.1em;
+}
+
+/* ==================== Responsive Design ==================== */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-container h1 {
+        font-size: 1.4em;
+    }
+
+    .horizontal-nav {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-box {
+        width: 95%;
+    }
+}

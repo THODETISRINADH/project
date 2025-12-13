@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Flask App{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="/static/images/Nec.png" alt="NEC Logo" class="logo">
+            </div>
+
+            <!-- Title at Center -->
+            <div class="title-container">
+                <h1>Harnessing RNN for Enhanced Hate Speech Detection in Social Media</h1>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="horizontal-nav">
+            <a href="/">Home</a>
+            <a href="/about">About Project</a>
+            <a href="/prediction">Predictions</a>
+            <a href="/model_eval">Model Evaluation</a>
+            <a href="/flowchart">Project Flowchart</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-wrapper">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hate Speech Detection</p>
+    </footer>
+
+</body>
+</html>
